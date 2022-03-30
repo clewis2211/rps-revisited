@@ -1,3 +1,9 @@
+let player = 0;
+let computer = 0;
+
+player++;
+computer++;
+
 //Function that tells the computer to select and return a random element from the array
 function computerPlay(){
     const computerArray = ['Rock', 'Paper', 'Scissors'];
@@ -6,16 +12,11 @@ function computerPlay(){
     return item;
 }
 
-let player = 0;
-let computer = 0;
 
-player++;
-computer++;
 
 //Function that plays a  game of rock paper scissors against the computer
 function playGame(playerSelection, computerSelection){
 
-    for(let i = 0; i < 5; i++){   
         if(playerSelection === 'rock' && computerSelection === 'Rock'){
             return (`You chose ${playerSelection} and computer chose ${computerSelection}. It's a tie.`)
 
@@ -50,12 +51,11 @@ function playGame(playerSelection, computerSelection){
         } else if(player < computer){
             return (`Computer wins with ${computer} points`)
         }
-}
-}
-let playerPick = prompt('What do you choose?');
-let computerPick = computerPlay();
 
-console.log(playGame(playerPick, computerPick));
+}
+// let playerPick = prompt('What do you choose?');
+// let computerPick = computerPlay();
+
 
 
 
